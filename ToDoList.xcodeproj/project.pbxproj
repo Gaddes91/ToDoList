@@ -14,6 +14,7 @@
 		4BD8F4551B0D2FF6005F0E0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD8F4541B0D2FF6005F0E0A /* Images.xcassets */; };
 		4BD8F4581B0D2FF6005F0E0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BD8F4561B0D2FF6005F0E0A /* LaunchScreen.xib */; };
 		4BD8F4641B0D2FF6005F0E0A /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD8F4631B0D2FF6005F0E0A /* ToDoListTests.m */; };
+		4BD8F46F1B0E6351005F0E0A /* AddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD8F46E1B0E6351005F0E0A /* AddToDoItemViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		4BD8F45D1B0D2FF6005F0E0A /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD8F4621B0D2FF6005F0E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BD8F4631B0D2FF6005F0E0A /* ToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListTests.m; sourceTree = "<group>"; };
+		4BD8F46D1B0E6351005F0E0A /* AddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToDoItemViewController.h; sourceTree = "<group>"; };
+		4BD8F46E1B0E6351005F0E0A /* AddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToDoItemViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				4BD8F44C1B0D2FF6005F0E0A /* AppDelegate.m */,
 				4BD8F44E1B0D2FF6005F0E0A /* ViewController.h */,
 				4BD8F44F1B0D2FF6005F0E0A /* ViewController.m */,
+				4BD8F46D1B0E6351005F0E0A /* AddToDoItemViewController.h */,
+				4BD8F46E1B0E6351005F0E0A /* AddToDoItemViewController.m */,
 				4BD8F4511B0D2FF6005F0E0A /* Main.storyboard */,
 				4BD8F4541B0D2FF6005F0E0A /* Images.xcassets */,
 				4BD8F4561B0D2FF6005F0E0A /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				4BD8F4501B0D2FF6005F0E0A /* ViewController.m in Sources */,
 				4BD8F44D1B0D2FF6005F0E0A /* AppDelegate.m in Sources */,
 				4BD8F44A1B0D2FF6005F0E0A /* main.m in Sources */,
+				4BD8F46F1B0E6351005F0E0A /* AddToDoItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
