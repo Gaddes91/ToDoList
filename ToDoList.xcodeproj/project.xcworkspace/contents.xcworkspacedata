@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../ToDoListTableViewController.h">
+   </FileRef>
+   <FileRef
+      location = "group:../ToDoListTableViewController.m">
+   </FileRef>
+   <FileRef
       location = "self:ToDoList.xcodeproj">
    </FileRef>
 </Workspace>
