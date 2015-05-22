@@ -68,6 +68,14 @@
     // Fetch the appropriate item in the toDoItems array and set the name of that item to display in the cell
     ToDoItem *toDoItem = [self.toDoItems objectAtIndex:indexPath.row];
     cell.textLabel.text = toDoItem.itemName;
+    
+    // Check the completion state of a to-do item and set the cell accessory (in this case, a checkmark) based on its state
+    if (toDoItem.completed) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
     return cell;
 }
 
@@ -115,5 +123,22 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - Table view delegate
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    // De-select the cell immediately after selection
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    // Search for the ToDoItem in the toDoItems array that corresponds to the cell that was tapped
+    ToDoItem *tappedItem = [self.toDoItems objectAtIndex:indexPath.row];
+    
+    // Toggle the completion state of the tapped item
+    tappedItem.completed = !tappedItem.completed;
+    
+    // Tell the table view to reload the row whose data you just updated
+    [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+}
 
 @end
