@@ -8,6 +8,7 @@
 
 #import "ToDoListTableViewController.h"
 #import "ToDoItem.h"
+#import "AddToDoItemViewController.h"
 
 @interface ToDoListTableViewController ()
 
@@ -32,6 +33,21 @@
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue {
     
+    // Retrieve the source view controller - the controller we're unwinding from, AddToDoItemViewController
+    AddToDoItemViewController *source = [segue sourceViewController];
+    
+    // Retrieve the value of the controller's toDoItem property
+    ToDoItem *item = source.toDoItem;
+    
+    // Check whether or not the item exists
+    if (item != nil) {
+        
+        // If it does exist, add the item to the toDoItems array
+        [self.toDoItems addObject:item];
+        
+        // Reload data in the table
+        [self.tableView reloadData];
+    }
 }
 
 - (void)viewDidLoad {
